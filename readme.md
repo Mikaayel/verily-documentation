@@ -3,7 +3,7 @@
 ## Getting Started
 
 ### **Create New Feed**
-To add a new datafeed you will need to go to the dashboard and select the button to create a new feed. The feed will show under your feeds list however and will be initialised with empty values.
+To add a new datafeed you will need to go to the dashboard and select the button to create a new feed. The newly created feed will show under your feeds list and will be initialised with empty values.
 
 Once you have sent data to the feed it will become available to choose from your feeds list to be visualised.
 
@@ -12,18 +12,20 @@ Once you have sent data to the feed it will become available to choose from your
 Tokens are used to verify the authenticity of the user submitting the data. You will need to go to the dashboard and select to generate a new token.
 
 
-Your token can be changed at any time by returning tot he dashboard and re-generating the token however don't forget to update the token on all your feeds otherwise the data will be rejected.
+Your token can be changed at any time by returning to the dashboard and re-generating the token however don't forget to update the token on all your feeds otherwise your data payload will be rejected.
 
 ---
 ## API's
 All API's expect data to be sent in json format or they will reject the payload. To do this ensure that head contains the key/value pair Content-Type, application/json.
 
-To test out sending data to your feed we recommend using the application Postman to make a Post request.
+To test sending data to your feed we recommend using the application [Postman](https://www.getpostman.com/) to make a Post request.
 
-### setDataFeed
+### **setDataFeed**
 This is an example of how to set data using the setDataFeed api.
 
 The setDataFeed API endpoint is: https://us-central1-verily-3d1a5.cloudfunctions.net/setDataFeed
+
+The email address must match the email address registered to your google account or your data payload will be rejected.
 
 The end points may change in future but we will keep you updated through your dashboard. 
 
